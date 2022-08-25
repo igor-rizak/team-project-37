@@ -71,24 +71,25 @@ a {
     margin-bottom: 30px;
 }
 .button {
-    // color: $primary-bg-color;
-    // background-color: $accent-text-color;
     cursor: pointer;
+
     font-family: inherit;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.8;
-    letter-spacing: 0.06em;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(20/14);
+
     text-align: center;
     border-width: initial;
     border-style: none;
     border-color: initial;
     border-image: initial;
-    border-radius: 4px;
-    padding: 10px 32px;
+    border-radius: 30px;
+    padding: 6px 18px;
 
-//     &:hover,
-//     &:focus {
-//          background-color: $btn-hover-color ;
-//     }
+    background-color: $primary-btn-color;
+
+    &:hover,
+    &:focus {
+         background-color: $accent-btn-cl;
+    }
 }

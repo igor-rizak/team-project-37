@@ -1,10 +1,36 @@
 // header
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    margin-top: 10px;
+}
+
 .header__menu{
     @media screen and (max-width:767px) {
         display: none;
     }
-    
 }
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header__link{
+    color: $primary-text-color;
+
+    transition: hover $timing-function, focus $timing-function;
+    
+    &:hover,
+    &:focus {
+        color: $primary-btn-color;
+        text-decoration-line: underline;
+    }
+}
+
 .menu-btn {
     display: inline-flex;
     align-items: center;
@@ -18,8 +44,80 @@
 
     cursor: pointer;
 
+    @media screen and (min-width: 768px) {
+        display: none;    
+    }
+
 }
  .icon-menu{
   width: 26px;
   height: 16px;
  }
+
+//  Mobile-menu
+
+.mobile__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(25, 28, 38, 0.2); 
+    z-index: 100;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+ transition: opacity $timing-function, visibility $timing-function;
+
+}
+.mobile__overlay.is-open{
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
+}
+.mobile__menu {
+    display: flex; 
+    flex-direction: column;
+
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: auto;
+
+    width: 130px;
+    height: 255px;
+
+    background-color: $primary-bg-color;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    border-radius: 30px 0px 30px 30px;
+
+    transform: translateX(100%);
+    transition: transform $timing-function;
+}
+.mobile__overlay.is-open .mobile__menu{
+    transform: translateX(0);
+}
+
+.mobile__item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+
+    &:hover,
+    &:focus,
+    &:active {
+         background-color: $accent-btn-cl;
+    }
+
+}
+.mobile__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19/16);
+
+    color: $secondary-text-color;
+
+}
