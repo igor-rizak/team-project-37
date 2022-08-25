@@ -1,7 +1,23 @@
-$accent-hover-color: #bbf330;
-$mobile-menu-color: #7EB101;
+// Fonts
+$main-fonts: 'Roboto', sans-serif;
+
+// Text-color
+$primary-text-color: #2C2C2C;
+$secondary-text-color: #000000;
+
+//  Bg-color
 $primary-bg-color: #FEFEFE;
-$slave-bg-color: #FFE550;
-$prymary-text-color: #2C2C2C;
-$burger-text-color: #000000;
-// $radial-gradient-color: (50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+$secondary-bg-color: #FFE550;
+
+// Other
+$primary-btn-color: #bbf330;
+$accent-btn-cl: #B5FF00;
+$accent-menu-color: #7EB101;
+$accent-border-cl: #597D00;
+
+
+
+
+//  $radial-gradient-color: (50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+
+ $timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
