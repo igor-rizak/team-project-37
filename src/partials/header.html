@@ -1,28 +1,32 @@
 <!-- header section -->
-<header class="header container">
-    <a href="./index.html" class="header__logo-link">
-        <img src="./images/logo/logo.png" alt="logo FoodSta" class="header__logo-icon" width="72" height="52"/>
-    </a>
-    <nav class="header__nav">
-        <ul class="header__nav-list list">
-            <li class="header__nav-item"><a href="" class="header__navlink">Home</a></li>
-            <li class="header__nav-item"><a href="" class="header__navlink">About</a></li>
-            <li class="header__nav-item"><a href="" class="header__navlink">Service</a></li>
-            <li class="header__nav-item"><a href="" class="header__navlink">Menu</a></li>
-            <li class="header__nav-item"><a href="" class="header__navlink">Contact</a></li>
-        </ul>
-        <button class="header__btn" type="button">Order Now</button>
-    </nav>
-    <button
-          type="button"
-          class="menu-button is-open"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg width="28" hidden="28" aria-label="mobil menu">
-            <use class="icon-menu" href="./images/gg_menu.svg"></use>
-            <!-- <use class="icon-close" href="./images/gg_menu.svg"></use> -->
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <a href="./index.html" class="header__logo-link">
+                <img src="./images/logo/logo.png" alt="logo FoodSta" class="header__logo-icon" width="72" height="52"/>
+            </a>
+        <button class="menu-btn" type="button">
+          <svg width="28" height="28">
+            <use href="./images/gg_menu.svg"></use>
+            <use class="icon-close" href="./images/gg_menu.svg"></use>
           </svg>
+          <img src="./images/gg_menu.svg" alt="menu">
         </button>
+            <!-- <div class="header__burger">
+                <span>
+                    <img src="./images/gg_menu.svg" alt="menu">
+                </span>
+            </div> -->
+            <nav class="header__menu">
+                <ul class="header__list list">
+                    <li class="header__item"><a href="" class="header__link">Home</a></li>
+                    <li class="header__item"><a href="" class="header__link">About</a></li>
+                    <li class="header__item"><a href="" class="header__link">Service</a></li>
+                    <li class="header__item"><a href="" class="header__link">Menu</a></li>
+                    <li class="header__item"><a href="" class="header__link">Contact</a></li>
+                </ul>
+                <button class="header__btn" type="button">Order Now</button>
+            </nav>
+        </div>
+    </div>
     </header>

@@ -1,21 +1,25 @@
 // header
-.header{
-    margin-top: 10px;
-    background-color: $primary-bg-color;
+.header__menu{
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+    
 }
-.logo {
-    margin-right: 93px;
-}
+.menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-.header__nav {
-    display: none;
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
-    @media screen and (min-width: 1200px) {
-        justify-content: space-between;
-    }
+    width: 28px;
+    height: 28px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
 }
-.menu-button {
-    display: flex;
-}
+ .icon-menu{
+  width: 26px;
+  height: 16px;
+ }
