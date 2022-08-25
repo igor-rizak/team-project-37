@@ -1,5 +1,5 @@
 <!-- header section -->
-<header class="header">
+<header class="header container">
     <a href="./index.html" class="header__logo-link">
         <img src="./images/logo/logo.png" alt="logo FoodSta" class="header__logo-icon" width="72" height="52"/>
     </a>
@@ -13,4 +13,16 @@
         </ul>
         <button class="header__btn" type="button">Order Now</button>
     </nav>
+    <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="28" hidden="28" aria-label="mobil menu">
+            <use class="icon-menu" href="./images/gg_menu.svg"></use>
+            <!-- <use class="icon-close" href="./images/gg_menu.svg"></use> -->
+          </svg>
+        </button>
     </header>

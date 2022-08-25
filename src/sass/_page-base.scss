@@ -17,8 +17,8 @@ a {
 }
 
 .container {
- padding-left: 15px;
- padding-right: 15px;
+ padding-left: 20px;
+ padding-right: 20px;
  margin-left: auto;
  margin-right: auto;
 
@@ -31,14 +31,19 @@ a {
 
  @media screen and (min-width: 480px) {
     width: 480px;
+   
  }
 
  @media screen and (min-width: 768px) {
     width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
  }
 
   @media screen and (min-width: 1200px) {
       width: 1200px;   
+      padding-left: 16px;
+      padding-right: 16px;
   }
 }
 .section {

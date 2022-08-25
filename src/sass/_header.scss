@@ -1,1 +1,21 @@
 // header
+.header{
+    margin-top: 10px;
+    background-color: $primary-bg-color;
+}
+.logo {
+    margin-right: 93px;
+}
+
+.header__nav {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
+}
+.menu-button {
+    display: flex;
+}
