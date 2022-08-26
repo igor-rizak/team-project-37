@@ -10,7 +10,7 @@
     }
 }
 @media screen and (min-width:1280px) {
-    .subscribe-section__picture {
+    .subscribe-section {
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -74,6 +74,11 @@ background: #FFFFFF;
 
 border: 0.854167px solid #FFE550;
 border-radius: 30px;
+    &:hover,
+    &:focus {
+        background: #FFE550;
+        border: 0.854167px solid #7EB101;
+    }
 
 }
 @media screen and (min-width:768px) {
