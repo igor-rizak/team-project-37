@@ -1,1 +1,118 @@
 // Subscribe
+.subscribe-section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media screen and (min-width:768px) {
+    .subscribe-section {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .subscribe-section__picture {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+.subscribe-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width:768px) {
+    .subscribe-section__picture {
+        margin-left: 455px;
+    }
+}
+.subscribe-section__header {
+    display: block;
+    text-align: start;
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    width: 280px;
+
+    color: $primary-text-color;
+}
+@media screen and (min-width:768px) {
+    .subscribe-section__header {
+    font-size: 42px;
+    width: 656px;
+}
+}
+.subscribe-section__text {
+    text-align: start;
+    font-family: $main-fonts;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    
+    
+    color: $primary-text-color;
+    display: block;
+    max-width: 280px;
+}
+@media screen and (min-width:768px) {
+    .subscribe-section__text {
+        font-size: 16px;
+        margin-bottom: 24px;
+        max-width: 656px;
+    }
+}
+.subscribe-section__input {
+margin-top: 40px;
+width: 279px;
+height: 42px;
+left: -1px;
+top: 0px;
+
+background: #FFFFFF;
+
+border: 0.854167px solid #FFE550;
+border-radius: 30px;
+
+}
+@media screen and (min-width:768px) {
+    .subscribe-section__input {
+        width: 395px;
+    }
+}
+.subscribe-section__input::placeholder {
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $primary-text-color;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+.subscribe-section__btn {
+    width: 103px;
+    height: 42px;
+    left: 197px;
+    top: 3734px;
+    
+    
+    background: $primary-btn-color;
+    border-radius: 30px;
+    border: none;
+
+    cursor: pointer;
+
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+
+    color: $primary-text-color;
+       
+}
+
