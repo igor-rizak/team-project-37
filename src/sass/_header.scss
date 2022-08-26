@@ -92,6 +92,8 @@
 
     width: 130px;
     height: 255px;
+    
+
     overflow: hidden;
 
     background-color: $primary-bg-color;
@@ -108,7 +110,9 @@
 .mobile__overlay.is-open .mobile__menu{
     transform: translateX(0);
 }
-
+// .mobile__list{
+//     overflow: hidden;
+// }
 .mobile__item {
     padding-top: 16px;
     padding-bottom: 16px;
