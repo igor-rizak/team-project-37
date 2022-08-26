@@ -8,11 +8,11 @@
                 <button class="menu-btn  is-open" type="button"  aria-expanded="false"
                         aria-controls="menu-container"
                         data-menu-button>
-                    <!-- <svg width="28" height="28">
-                            <use href="./images/gg_menu.svg"></use>
-                            <use class="icon-close" href="./images/gg_menu.svg"></use>
-                        </svg> -->
-                    <img src="./images/gg_menu.svg" alt="menu">
+                        <svg width="28" height="28">
+                            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                            <use class="icon-close" href="./images/sprite.svg#cross"></use>
+                        </svg>
+                    <!-- <img src="./images/gg_menu.svg" alt="menu"> -->
                 </button>
                 <nav class="header__menu">
                     <ul class="header__list list">
@@ -39,5 +39,14 @@
         </div>
     </div>
     <!-- modal  -->
-        
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal__btn" data-modal-close>
+            <span hidden>close</span>
+            <svg class="modal__icon">
+              <use href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
+    </div>
 </header>
