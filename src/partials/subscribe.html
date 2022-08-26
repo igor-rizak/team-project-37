@@ -1,1 +1,31 @@
 <!-- Subscribe section -->
+<section class="subscribe-section">
+    <div class="container subscribe-section__container"></div>
+        <div class="subscribe-section__picture">
+        <picture>
+            <!-- mobile -->
+            <source media="(max-width: 767px)" srcset=" ./images\subscribe\bananM@1x.png 1x, 
+                                                ./images\subscribe\bananM@2x.png 2x" type="image/png">
+            <!-- tablet -->
+            <source media="(min-width: 768px)" srcset=" ./images\subscribe\bananT@1x.png 1x, 
+                                                            ./images\subscribe\bananT@2x.png 2x" type="image/png">
+            <!-- desktop -->
+            <source media="(min-width: 1280px)" srcset=" ./images\subscribe\bananD@1x.png 1x, 
+                                                            ./images\subscribe\bananD@2x.png 2x" type="image/png">
+            <img src="./images\subscribe\bananM@1x.png" alt="Банан" class="subscribe-section__img">
+        </picture>
+        </div>
+    
+        <div class="subscribe-section__div">
+            <h1 class="subscribe-section__header">Subscribe To Get Special Offers</h1>
+            <p class="subscribe-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+            in eros elementum tristique.</p>
+            <label class="subscribe-section__wrap">
+                <input type="text" class="subscribe-section__input" placeholder="Enter your email">
+            </label>
+            <button class="subscribe-section__btn" type="button">Subscribe</button>
+        </div>
+        
+    </div>
+
+</section>
