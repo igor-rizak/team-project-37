@@ -22,20 +22,24 @@ a {
  margin-left: auto;
  margin-right: auto;
  
+ @media screen and (max-width: 479px) {
+    max-width: 480px;
+   
+ }
 
  @media screen and (min-width: 480px) {
-    max-width: 768px;
+     width: 480px;
    
  }
 
  @media screen and (min-width: 768px) {
-    max-width: 1279px;
+    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
  }
 
-  @media screen and (min-width: 1200px) {
-      width: 1280px;   
+  @media screen and (min-width: 1280px) {
+      max-width: 1280px;   
       padding-left: 16px;
       padding-right: 16px;
   }
@@ -54,8 +58,8 @@ a {
     padding: 0px;
     margin: 0px;
 }
-.titel {
-    // color: $primary-titel-color;
+
+.title {
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
