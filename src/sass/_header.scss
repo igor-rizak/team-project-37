@@ -65,7 +65,7 @@
     height: 100%;
 
     background: transparent;
-    z-index: 100;
+    z-index: 3;
 
     opacity: 0;
     pointer-events: none;
@@ -110,9 +110,7 @@
 .mobile__overlay.is-open .mobile__menu{
     transform: translateX(0);
 }
-// .mobile__list{
-//     overflow: hidden;
-// }
+
 .mobile__item {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -121,7 +119,7 @@
     &:hover,
     &:focus,
     &:active {
-         background-color: $accent-btn-cl;
+        background-color: $accent-btn-cl;
     }
 
 }
@@ -135,7 +133,7 @@
 }
 
 .menu-btn {
-    z-index: 100;
+    z-index: 5;
     display: inline-flex;
     margin: 0;
     padding: 0;
