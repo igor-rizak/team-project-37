@@ -1,1 +1,72 @@
 // Offerings
+.offerings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  margin-right: 90px;
+  padding-top: 177px;
+  padding-bottom: 75px;
+}
+.content {
+  flex-basis: 573px;
+  padding-top: 260px;
+}
+.content__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content__main-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #2c2c2c;
+}
+.content__main-subtitle {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2c2c2c;
+}
+.content__item {
+  margin-bottom: 32px;
+}
+.content__item:not(:last-child) {
+  margin-right: 67px;
+}
+.content__icon {
+  left: 10.94%;
+  right: 4.94%;
+  top: 8.49%;
+  bottom: 8.12%;
+
+  fill: #7eb101;
+}
+.content__title {
+  font-weight: 700;
+  font-size: 17.0833px;
+  line-height: 140%;
+  color: #2c2c2c;
+}
+.content__subtitle {
+  font-size: 14px;
+  line-height: 150%;
+  color: #2c2c2c;
+}
+.content__btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #2c2c2c;
+
+  width: 106px;
+  height: 40px;
+  left: 656px;
+  top: 1204px;
+  background: #ffffff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  cursor: pointer;
+}
