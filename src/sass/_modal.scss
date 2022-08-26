@@ -79,3 +79,61 @@
 
     background-size: contain;
 }
+
+// form
+
+.form {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+}
+
+.form__title {
+    font-size: 20px;
+    line-height: 1.1; 
+
+    margin: 0;
+    margin-bottom: 12px; 
+    text-align: center;
+
+    color: $primary-text-color;
+}
+
+.form__label {
+    margin-bottom: 4px;
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    text-align: start;
+
+    font-size: 12px;
+    line-height: 1.2;
+    color: $primary-text-color;
+
+    &:focus-within>.form__icon {
+            fill: $accent-btn-cl;
+        }
+    & input::placeholder {
+            color: $primary-text-color;
+        }
+}
+
+.form__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: box-shadow 250ms $timing-function;
+    
+        &:hover,
+        &:focus {
+            box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.15);
+        }
+        @media screen and (min-width: 480px) {
+           width: 250px;
+        }
+    }
