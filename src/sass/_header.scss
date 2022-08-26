@@ -64,15 +64,18 @@
     width: 100%;
     height: 100%;
 
-    background: rgba(25, 28, 38, 0.2); 
+    background: transparent;
     z-index: 100;
 
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 
- transition: opacity $timing-function, visibility $timing-function;
+    transition: opacity $timing-function, visibility $timing-function;
 
+    @media screen and (min-width: 768px) {
+        display: none;    
+    }
 }
 .mobile__overlay.is-open{
     opacity: 1;
@@ -89,6 +92,7 @@
 
     width: 130px;
     height: 255px;
+    overflow: hidden;
 
     background-color: $primary-bg-color;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
@@ -96,7 +100,11 @@
 
     transform: translateX(100%);
     transition: transform $timing-function;
+    @media screen and (min-width: 768px) {
+        display: none;    
+    }
 }
+
 .mobile__overlay.is-open .mobile__menu{
     transform: translateX(0);
 }
@@ -120,4 +128,37 @@
 
     color: $secondary-text-color;
 
+}
+
+.menu-btn {
+    z-index: 100;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    fill: $accent-menu-color;
+    background-color: transparent ;
+
+    &:hover,
+    &:focus {
+        fill: $accent-btn-cl ;
+    }
+
+    & .icon-close {
+        display: block;
+    }
+    
+    &.is-open .icon-close {
+        display: none;
+    }
+
+    & .icon-menu {
+        display: none;
+    }
+    &.is-open .icon-menu {
+        display: block;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;        
+    }
 }
